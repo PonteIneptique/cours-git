@@ -55,7 +55,7 @@ Notes pour le cours
 - Le versionnage est un outil essentiel de la gestion de données et de documents numériques quand la majorité de votre travail se passe sur PC.
 - Dropbox, google drive et consorts ne sont pas des solutions : le retour arrière, la tracabilité n'est pas assurée.
 
-# Slide 8
+# Slide 8, 9, 10
 
 Faire une démo (Essayer de faire deviner les commandes)
 
@@ -69,10 +69,12 @@ Faire une démo (Essayer de faire deviner les commandes)
 - `ls -la`
 - `git status`
 - `git diff`
+	- Slide 9
 - `git add cours1.md`
 - `git status`
 - `git diff` # Faire remarquer qu'il n'y a pas de diff puisqu'il n'y a encore rien d'enregistré dans l'archive
 - `git commit -m "Premières notes du cours"`
+	- Slide 10
 - `git log`
 - `git status`
 - `git diff`
@@ -87,6 +89,14 @@ Faire une démo (Essayer de faire deviner les commandes)
 - `git status`
 - `git diff`
 - `git log` # Faire remarquer les noms de commits (ne pas utiliser le terme hash)
+- Copier ou télécharger l'image [blanc.png](https://ponteineptique.github.io/cours-git/cours-1/images/blanc.png)
+- `git add blanc.png`
+- `git commit -m "Ajout de l'image blanche"`
+- Copier ou télécharger l'image [blanc1.png](https://ponteineptique.github.io/cours-git/cours-1/images/blanc1.png) en la renommant blanc
+- git diff
+- `git add blanc.png`
+- `git commit -m "correction de l'image blanche"`
 
+# Slide 11
 - Tenter la meme chose avec une image blanche et une image blanche avec un carré noire
 		-> Parler des limitations pour les fichiers compilés !

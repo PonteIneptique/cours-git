@@ -128,13 +128,39 @@ On distingue trois "états" des fichiers
 
 ---
 
-# 11. Les branches
+# 11. Formats "compilés" / "compressés"
 
-[En notes] Git est un outil puissant car non seule;ent
+- https://ponteineptique.github.io/cours-git/cours-1/images/blanc.png ![https://ponteineptique.github.io/cours-git/cours-1/images/blanc.png](cours-1/images/blanc.png)
+- https://ponteineptique.github.io/cours-git/cours-1/images/blanc2.png ![https://ponteineptique.github.io/cours-git/cours-1/images/blanc2.png](cours-1/images/blanc2.png)
 
-- Offre la possibilité de travailler sur différents problèmes en parallèle sur plusieurs problèmes.
+---
+
+# 12. Les branches
+
 - Les branches sont comme des "Sauvegarder sous..." pour l'ensemble du dépôt
-	- Sauf qu'on peut les rejoindre plus facilement !
+	- Sauf qu'on peut les rejoindre/fusionner plus facilement !
+- La branche par défaut s'appelle master
+	- Dans `git status`, la branche `master` doit être affichée dans votre dossier de notes
+- Offre la possibilité de travailler sur différents problèmes en parallèle. Possibilité de travailler sur des problèmes différents en même temps et de changer de tâche rapidement.
+	- Une branche Master
+	- Une branche bug 1
+	- Une branche bug 2 parce que celui-ci est plus pressé
+	- etc...
+
+---
+
+# 13. Les branches : Vocabulaire
+
+- **Créer une branche** : `git branch [nom de la branche]`
+- **Se déplacer dans une branche** : `git checkout [nom de la branche]`
+- **Se déplacer et créer une branche en même temps** : `git checkout -b [nom de la branche]`
+- **Fusionner une branche** : `git merge` (On fusionne toujours depuis la branche réceptrice, celle sur laquelle on veut continuer de travailler ensuite)
+
+---
+
+# 14. Branches
+
+![Issue de http://www.ateam-oracle.com/developercloudserviceworkflow/](cours-1/images/branches.png)
 
 ---
 
