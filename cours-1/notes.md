@@ -25,6 +25,7 @@ Notes pour le cours
 - https://programminghistorian.org/lessons/getting-started-with-github-desktop
 - https://recompilermag.com/issues/issue-1/how-to-teach-git/
 - http://liris.cnrs.fr/~pchampin/enseignement/intro-git/
+- https://betterexplained.com/articles/aha-moments-when-learning-git/
 
 # Aller plus loin
 
@@ -53,3 +54,39 @@ Notes pour le cours
 
 - Le versionnage est un outil essentiel de la gestion de données et de documents numériques quand la majorité de votre travail se passe sur PC.
 - Dropbox, google drive et consorts ne sont pas des solutions : le retour arrière, la tracabilité n'est pas assurée.
+
+# Slide 8
+
+Faire une démo (Essayer de faire deviner les commandes)
+
+- `cd dev`
+- `mkdir notes-du-cours`
+- `cd notes-du-cours`
+- `git init`
+- `ls -la`
+- `gedit cours1.md`
+	- Copier les notes jusqu'ici
+- `ls -la`
+- `git status`
+- `git diff`
+- `git add cours1.md`
+- `git status`
+- `git diff` # Faire remarquer qu'il n'y a pas de diff puisqu'il n'y a encore rien d'enregistré dans l'archive
+- `git commit -m "Premières notes du cours"`
+- `git log`
+- `git status`
+- `git diff`
+- `gedit cours1.md`
+	- Ajouter les notes précédentes
+- `git status`
+- `git diff`
+- `git add cours1.md`
+- `git status`
+- `git diff`
+- `git commit -m "Ajout de notes oubliées pour le cours 1"`
+- `git status`
+- `git diff`
+- `git log` # Faire remarquer les noms de commits (ne pas utiliser le terme hash)
+
+- Tenter la meme chose avec une image blanche et une image blanche avec un carré noire
+		-> Parler des limitations pour les fichiers compilés !

@@ -27,6 +27,7 @@
         <li><a href="#slide-3">Slide 3</a></li>
         <li><a href="#slide-4">Slide 4</a></li>
         </ul></li>
+        <li><a href="#slide-8">Slide 8</a></li>
         </ul>
         </div>
       </div>
@@ -39,7 +40,7 @@
 <ol type="1">
 <li>À quel besoin répond Git ?</li>
 <li>Naissance de Git
-<ol start="2" type="1">
+<ol type="1">
 <li>Quels autres logiciels de versioning ?</li>
 </ol></li>
 <li>Fonctionnement global</li>
@@ -65,6 +66,7 @@
 <li>https://programminghistorian.org/lessons/getting-started-with-github-desktop</li>
 <li>https://recompilermag.com/issues/issue-1/how-to-teach-git/</li>
 <li>http://liris.cnrs.fr/~pchampin/enseignement/intro-git/</li>
+<li>https://betterexplained.com/articles/aha-moments-when-learning-git/</li>
 </ul>
 <h1 id="aller-plus-loin">Aller plus loin</h1>
 <ul>
@@ -94,6 +96,43 @@
 <ul>
 <li>Le versionnage est un outil essentiel de la gestion de données et de documents numériques quand la majorité de votre travail se passe sur PC.</li>
 <li>Dropbox, google drive et consorts ne sont pas des solutions : le retour arrière, la tracabilité n'est pas assurée.</li>
+</ul>
+<h1 id="slide-8">Slide 8</h1>
+<p>Faire une démo (Essayer de faire deviner les commandes)</p>
+<ul>
+<li><code>cd dev</code></li>
+<li><code>mkdir notes-du-cours</code></li>
+<li><code>cd notes-du-cours</code></li>
+<li><code>git init</code></li>
+<li><code>ls -la</code></li>
+<li><code>gedit cours1.md</code>
+<ul>
+<li>Copier les notes jusqu'ici</li>
+</ul></li>
+<li><code>ls -la</code></li>
+<li><code>git status</code></li>
+<li><code>git diff</code></li>
+<li><code>git add cours1.md</code></li>
+<li><code>git status</code></li>
+<li><code>git diff</code> # Faire remarquer qu'il n'y a pas de diff puisqu'il n'y a encore rien d'enregistré dans l'archive</li>
+<li><code>git commit -m &quot;Premières notes du cours&quot;</code></li>
+<li><code>git log</code></li>
+<li><code>git status</code></li>
+<li><code>git diff</code></li>
+<li><code>gedit cours1.md</code>
+<ul>
+<li>Ajouter les notes précédentes</li>
+</ul></li>
+<li><code>git status</code></li>
+<li><code>git diff</code></li>
+<li><code>git add cours1.md</code></li>
+<li><code>git status</code></li>
+<li><code>git diff</code></li>
+<li><code>git commit -m &quot;Ajout de notes oubliées pour le cours 1&quot;</code></li>
+<li><code>git status</code></li>
+<li><code>git diff</code></li>
+<li><p><code>git log</code> # Faire remarquer les noms de commits (ne pas utiliser le terme hash)</p></li>
+<li><p>Tenter la meme chose avec une image blanche et une image blanche avec un carré noire -&gt; Parler des limitations pour les fichiers compilés !</p></li>
 </ul>
             </div>
     </div>
