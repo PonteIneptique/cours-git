@@ -164,6 +164,27 @@ On distingue trois "états" des fichiers
 
 ---
 
+# 15. Conflits d'historique
+
+1. Copier le fichier xml  [https://ponteineptique.github.io/cours-git/cours-1/exemple.xml](https://ponteineptique.github.io/cours-git/cours-1/exemple.xml)
+2. Enregistrer ce changement dans git
+3. Changer de branche pour `changement-texte`
+4. Remplir titre et auteur avec le titre de votre livre préféré et auteur préféré
+5. Ajouter une description dans le document TEI
+2. Enregistrer ce changement dans git
+
+---
+
+#16.  Conflits d'historique : le professeur change d'avis 
+
+1. Changer de branche pour `master`
+2. Changer le titre et l'auteur pour "Epigrammes" et "Martial"
+3. Enregistrer le changement
+4. Fusionner avec la branche changement de texte
+	1. Alors ?
+
+---
+
 # Crédits
 
 - Images "Motivation" issues de [Introduction à Git](http://liris.cnrs.fr/~pchampin/enseignement/intro-git/) sous licence `CC BY SA 3.0`
