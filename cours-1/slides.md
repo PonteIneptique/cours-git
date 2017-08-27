@@ -2,39 +2,6 @@
 % Thibault Clérice
 % Octobre X, 2017
 
-# 0. Contenus du cours
-
-- 4 cours de 2h
-	- Git, commandes de base
-	- Github : Collaborer et faire de l'open-source/data
-	- Github et Travis : Organisation de projet, tests et intégration continue
-	- Point d'étape projet
-- 1 conférence 1.5h par Bridget Almas (Perseids & Alpheios)
-
----
-
-# 0. Devoir
-
-- Travail de groupe : 3/4 personnes maximum
-- Tâche : Transformation et gestions de texte et de leurs métadonnées parmi une sélection de textes
-	- Corpus latins déjà en XML
-	- Corpus francais
-	- Corpus ENC
-	- Possibilité de faire des propositions
-- Partage des rôles : Rôles clairs et prédifinis dès le départ
-	- Gestionnaire de métadonnées
-	- Transformation des textes
-	- Gestionnaire de projet (peut-être partagé) : ouverture des billets de tâches, etc.
-	- Tenue d'un journal des tâches effectuées
-
-- Notation :
-	- A partir des archives GIT
-	- A partir du travail effectué et du sérieux dans le travail en équipe
-	- Notes différentes suivant les personnes
-	- Temps de travail estimé : 20 à 30 h sur 4 mois.
-
----
-
 # 1. Problème
 
 ![La source du problème](cours-1/images/motivation1.png)
@@ -132,56 +99,6 @@ On distingue trois "états" des fichiers
 
 - https://ponteineptique.github.io/cours-git/cours-1/images/blanc.png ![https://ponteineptique.github.io/cours-git/cours-1/images/blanc.png](cours-1/images/blanc.png)
 - https://ponteineptique.github.io/cours-git/cours-1/images/blanc2.png ![https://ponteineptique.github.io/cours-git/cours-1/images/blanc2.png](cours-1/images/blanc2.png)
-
----
-
-# 12. Les branches
-
-- Les branches sont comme des "Sauvegarder sous..." pour l'ensemble du dépôt
-	- Sauf qu'on peut les rejoindre/fusionner plus facilement !
-- La branche par défaut s'appelle master
-	- Dans `git status`, la branche `master` doit être affichée dans votre dossier de notes
-- Offre la possibilité de travailler sur différents problèmes en parallèle. Possibilité de travailler sur des problèmes différents en même temps et de changer de tâche rapidement.
-	- Une branche Master
-	- Une branche bug 1
-	- Une branche bug 2 parce que celui-ci est plus pressé
-	- etc...
-
----
-
-# 13. Les branches : Vocabulaire
-
-- **Créer une branche** : `git branch [nom de la branche]`
-- **Se déplacer dans une branche** : `git checkout [nom de la branche]`
-- **Se déplacer et créer une branche en même temps** : `git checkout -b [nom de la branche]`
-- **Fusionner une branche** : `git merge` (On fusionne toujours depuis la branche réceptrice, celle sur laquelle on veut continuer de travailler ensuite)
-
----
-
-# 14. Branches
-
-![Issue de http://www.ateam-oracle.com/developercloudserviceworkflow/](cours-1/images/branches.png)
-
----
-
-# 15. Conflits d'historique
-
-1. Copier le fichier xml  [https://ponteineptique.github.io/cours-git/cours-1/exemple.xml](https://ponteineptique.github.io/cours-git/cours-1/exemple.xml)
-2. Enregistrer ce changement dans git
-3. Changer de branche pour `changement-texte`
-4. Remplir titre et auteur avec le titre de votre livre préféré et auteur préféré
-5. Ajouter une description dans le document TEI
-2. Enregistrer ce changement dans git
-
----
-
-#16.  Conflits d'historique : le professeur change d'avis 
-
-1. Changer de branche pour `master`
-2. Changer le titre et l'auteur pour "Epigrammes" et "Martial"
-3. Enregistrer le changement
-4. Fusionner avec la branche changement de texte
-	1. Alors ?
 
 ---
 

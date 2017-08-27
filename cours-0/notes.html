@@ -17,111 +17,39 @@
           <li class="nav-header">Table of Contents</li>
         </ul>
         <ul>
-        <li><a href="#notes-pour-le-cours">Notes pour le cours</a></li>
-        <li><a href="#sources-pour-lenseignant">Sources pour l'enseignant</a></li>
-        <li><a href="#aller-plus-loin">Aller plus loin</a></li>
-        <li><a href="#notes-de-cours">Notes de cours</a><ul>
-        <li><a href="#slide-1">Slide 1</a></li>
-        <li><a href="#slide-2">Slide 2</a></li>
-        <li><a href="#slide-3">Slide 3</a></li>
-        <li><a href="#slide-4">Slide 4</a></li>
-        </ul></li>
-        <li><a href="#slide-8-9-10">Slide 8, 9, 10</a></li>
-        <li><a href="#slide-11">Slide 11</a></li>
+        <li><a href="#objectif">Objectif</a></li>
         </ul>
         </div>
       </div>
             <div class="span9">
-            <h1 id="notes-pour-le-cours">Notes pour le cours</h1>
-<h1 id="sources-pour-lenseignant">Sources pour l'enseignant</h1>
-<ul>
-<li>https://programminghistorian.org/lessons/getting-started-with-github-desktop</li>
-<li>https://recompilermag.com/issues/issue-1/how-to-teach-git/</li>
-<li>http://liris.cnrs.fr/~pchampin/enseignement/intro-git/</li>
-<li>https://betterexplained.com/articles/aha-moments-when-learning-git/</li>
-</ul>
-<h1 id="aller-plus-loin">Aller plus loin</h1>
-<ul>
+            <h1 id="objectif">Objectif</h1>
+<ol type="1">
+<li>(Parenthèse) Déroulé du cours et objectifs</li>
+<li>Compréhension de ce qu'est Git (histoire comprise)
+<ol type="1">
+<li>À quel besoin répond Git ?</li>
+<li>Naissance de Git
+<ol type="1">
+<li>Quels autres logiciels de versioning ?</li>
+</ol></li>
+<li>Fonctionnement global</li>
+</ol></li>
+<li>Fonctions de bases :
+<ol type="1">
+<li>Vocabulaire : qu'est-ce qu'un <em>repository</em> ?</li>
+<li>Initialiser un repository</li>
+<li>Ajouter et enregistrer une modification
+<ol type="1">
+<li>git add</li>
+<li>git commit &amp; git commit -m</li>
+</ol></li>
+</ol></li>
+<li>Les branches
+<ol type="1">
+<li>Principe des branches</li>
 <li></li>
-</ul>
-<h1 id="notes-de-cours">Notes de cours</h1>
-<h2 id="slide-1">Slide 1</h2>
-<ul>
-<li>La gestion de document numérique, même siens seulement, peut conduire à des situations peu aisées à gérer.</li>
-<li>Les nomenclatures changent, même quand on est seuls.</li>
-</ul>
-<h2 id="slide-2">Slide 2</h2>
-<ul>
-<li>La gestion de documents à plusieurs est encore plus complexe, surtout quand l'on vient à gérer des morceaux de code</li>
-<li>A partir de ces documents, quels besoins éprouvent-on ? Faire deviner :
-<ul>
-<li>Comprendre les versions</li>
-<li>Pouvoir revenir en arrière, avoir une &quot;trace&quot;</li>
-<li>Pouvoir avoir une collaboration simple</li>
-</ul></li>
-</ul>
-<h2 id="slide-3">Slide 3</h2>
-<ul>
-<li>Donner les réponses</li>
-</ul>
-<h2 id="slide-4">Slide 4</h2>
-<ul>
-<li>Le versionnage est un outil essentiel de la gestion de données et de documents numériques quand la majorité de votre travail se passe sur PC.</li>
-<li>Dropbox, google drive et consorts ne sont pas des solutions : le retour arrière, la tracabilité n'est pas assurée.</li>
-</ul>
-<h1 id="slide-8-9-10">Slide 8, 9, 10</h1>
-<p>Faire une démo (Essayer de faire deviner les commandes)</p>
-<ul>
-<li><code>cd dev</code></li>
-<li><code>mkdir notes-du-cours</code></li>
-<li><code>cd notes-du-cours</code></li>
-<li><code>git init</code></li>
-<li><code>ls -la</code></li>
-<li><code>gedit cours1.md</code>
-<ul>
-<li>Copier les notes jusqu'ici</li>
-</ul></li>
-<li><code>ls -la</code></li>
-<li><code>git status</code></li>
-<li><code>git diff</code>
-<ul>
-<li>Slide 9</li>
-</ul></li>
-<li><code>git add cours1.md</code></li>
-<li><code>git status</code></li>
-<li><code>git diff</code> # Faire remarquer qu'il n'y a pas de diff puisqu'il n'y a encore rien d'enregistré dans l'archive</li>
-<li><code>git commit -m &quot;Premières notes du cours&quot;</code>
-<ul>
-<li>Slide 10</li>
-</ul></li>
-<li><code>git log</code></li>
-<li><code>git status</code></li>
-<li><code>git diff</code></li>
-<li><code>gedit cours1.md</code>
-<ul>
-<li>Ajouter les notes précédentes</li>
-</ul></li>
-<li><code>git status</code></li>
-<li><code>git diff</code></li>
-<li><code>git add cours1.md</code></li>
-<li><code>git status</code></li>
-<li><code>git diff</code></li>
-<li><code>git commit -m &quot;Ajout de notes oubliées pour le cours 1&quot;</code></li>
-<li><code>git status</code></li>
-<li><code>git diff</code></li>
-<li><code>git log</code> # Faire remarquer les noms de commits (ne pas utiliser le terme hash)</li>
-<li>Copier ou télécharger l'image <a href="https://ponteineptique.github.io/cours-git/cours-1/images/blanc.png">blanc.png</a></li>
-<li><code>git add blanc.png</code></li>
-<li><code>git commit -m &quot;Ajout de l'image blanche&quot;</code></li>
-<li>Copier ou télécharger l'image <a href="https://ponteineptique.github.io/cours-git/cours-1/images/blanc1.png">blanc1.png</a> en la renommant blanc</li>
-<li>git diff</li>
-<li><code>git add blanc.png</code></li>
-<li><code>git commit -m &quot;correction de l'image blanche&quot;</code></li>
-</ul>
-<h1 id="slide-11">Slide 11</h1>
-<ul>
-<li>Tenter la meme chose avec une image blanche et une image blanche avec un carré noire -&gt; Parler des limitations pour les fichiers compilés !</li>
-</ul>
+</ol></li>
+</ol>
             </div>
     </div>
   </div>
