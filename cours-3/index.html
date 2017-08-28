@@ -35,6 +35,8 @@
         <li><a href="#le-vocabulaire-des-serveurs-distants-pour-git">4. Le vocabulaire des serveurs distants pour Git</a></li>
         <li><a href="#créons-un-compte-github">5. Créons un compte Github</a></li>
         <li><a href="#ajoutons-nos-notes-de-cours-en-ligne">6. Ajoutons nos notes de cours en ligne</a></li>
+        <li><a href="#cloner-un-repository">7. Cloner un repository</a></li>
+        <li><a href="#bonnes-pratiques...">8. Bonnes pratiques...</a></li>
         </ul>
         </div>
       </div>
@@ -103,6 +105,22 @@
 <li><code>git push</code> sera suffisant (pour la branche master !) à partir de maintenant</li>
 </ul></li>
 </ol>
+<hr />
+<h1 id="cloner-un-repository">7. Cloner un repository</h1>
+<p>Un dépôt git en ligne est peu ou prou la même chose qu'un dépot git local sauf que vous ne pouvez pas commit directement dessus. Il s'agit de l'archive &quot;.git&quot; de votre dépôt avec la capacité de se connecter et de synchroniser ces informations.</p>
+<p>Tous les dépôts git ne sont <strong>pas disponible en écriture</strong>. Il se peut qu'un repository git distant soit protégé pour n'être complété que par tel groupe de personne.</p>
+<p>Cependant, cela n'empêche pas de les <strong>cloner</strong> et de travailler dessus localement. Vous ne pourrez juste pas modifier le Git distant (remote)</p>
+<blockquote>
+<p><a href="https://github.com/ponteineptique/cours-git" class="uri">https://github.com/ponteineptique/cours-git</a></p>
+</blockquote>
+<hr />
+<h1 id="bonnes-pratiques...">8. Bonnes pratiques...</h1>
+<p>... quand on travaille avec plusieurs postes avec un dépôt distant</p>
+<ul>
+<li>Toujours faire un git status en se connectant sur son dossier</li>
+<li>Suivi d'un <code>git pull</code> si vous avez travaillé dessus depuis un autre poste ou depuis votre PC</li>
+<li>Essayez le plus possible de ne pas travailler dans la master mais dans des branches focalisées sur un objectif dès que votre projet commence à grossir</li>
+</ul>
             </div>
     </div>
   </div>
