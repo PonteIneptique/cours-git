@@ -7,4 +7,4 @@ Ces cours sont sous licence CC BY. Les ressources utilisées par le cours sont t
 1. [Git : Historique, commandes de base](./cours-1)
 2. [Git : Les branches](./cours-2)
 3. [Git : Serveur distant](./cours-3)
-4. Git : Github
+4. [Git : Github](./cours-4)

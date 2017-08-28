@@ -60,3 +60,25 @@ Des entreprises et des structures du publique fournissent des serveurs centralis
 	- `git push -u origin master`
 		- Git, envoie ma branche actuelle sur la branche master du serveur origin. (-u:) Cette branche correspondra à partir de maintenant à celle sur mon dépôt local
 	- `git push` sera suffisant (pour la branche master !) à partir de maintenant
+
+---
+
+# 7. Cloner un repository
+
+Un dépôt git en ligne est peu ou prou la même chose qu'un dépot git local sauf que vous ne pouvez pas commit directement dessus. Il s'agit de l'archive ".git" de votre dépôt avec la capacité de se connecter et de synchroniser ces informations. 
+
+Tous les dépôts git ne sont **pas disponible en écriture**. Il se peut qu'un repository git distant soit protégé pour n'être complété que par tel groupe de personne.
+
+Cependant, cela n'empêche pas de les **cloner** et de travailler dessus localement. Vous ne pourrez juste pas modifier le Git distant (remote)
+
+> [https://github.com/ponteineptique/cours-git](https://github.com/ponteineptique/cours-git)
+
+---
+
+# 8. Bonnes pratiques...
+
+... quand on travaille avec plusieurs postes avec un dépôt distant
+
+- Toujours faire un git status en se connectant sur son dossier
+- Suivi d'un `git pull` si vous avez travaillé dessus depuis un autre poste ou depuis votre PC
+- Essayez le plus possible de ne pas travailler dans la master mais dans des branches focalisées sur un objectif dès que votre projet commence à grossir
