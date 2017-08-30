@@ -93,3 +93,23 @@
 	5. Je fais la modification et je la commit
 	6. Je push
 	7. Je fais une pull request sur le repository d'origine
+
+---
+
+# 12. Exercice
+
+- Aller sur https://github.com/PonteIneptique/canonical-latinLit 
+- Prendre un dossier auteur de https://github.com/PonteIneptique/canonical-greekLit/tree/master/data (Identifié par tlg**** )
+- Dans ce dossier, ouvrir le fichier __cts__.xml
+- Suivant les bonnes pratiques (issues, fork, pull request), proposer la traduction du nom de l'auteur
+- **Bonus**: Ajouter l'identifiant Wikidata
+
+```xml
+...
+<cpt:structured-metadata
+        xmlns:cpt="http://purl.org/capitains/ns/1.0#"
+        xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:identifier>https://www.wikidata.org/wiki/Q2098</dc:identifier>
+</cpt:structured-metadata>
+</ti:textgroup>
+```
