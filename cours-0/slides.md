@@ -16,7 +16,7 @@
 # 0. Devoir
 
 - Travail de groupe : 3/4 personnes maximum
-- Tâche : Transformation et gestions de texte et de leurs métadonnées parmi une sélection de textes
+- Tâche : Transformation et gestions de texte et de leurs métadonnées parmi une sélection de textes (selon les guidelines https://capitains.org )
 	- Corpus latins déjà en XML
 	- Corpus francais
 	- Corpus ENC
