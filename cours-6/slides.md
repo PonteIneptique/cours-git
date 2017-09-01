@@ -8,7 +8,7 @@
 
 # 2. Former et se former
 
-![https://www.commitstrip.com/fr/2016/05/24/training-the-newbie/](https://www.commitstrip.com/wp-content/uploads/2016/05/Strip-Former-ou-ne-pas-former-650-final.jpg)
+![https://www.commitstrip.com/fr/2016/05/24/training-the-newbie/](https://www.commitstrip.com/wp-content/uploads/2016/05/Strip-Former-ou-ne-pas-former-650-final.jpg){height=60%}
 
 ---
 
@@ -37,6 +37,7 @@
 
 # 7. Améliorer, contribuer 
 
+![https://www.commitstrip.com/fr/2014/05/07/the-truth-behind-open-source-apps/](cours-6/images/Strip-Vision-Open-source-650-final1.jpg){height=60%}
 
 ---
 
@@ -52,8 +53,9 @@
 
 ---
 
-# 10. Documenter.
+# 10 Indenter
 
+![https://xkcd.com/1695/](cours-6/images/code_quality_2.png)
 
 ---
 
@@ -62,7 +64,15 @@
 
 ---
 
+# 12. Documenter.
+
+![http://www.commitstrip.com/fr/2016/07/27/documentation-just-before-vacation/](cours-6/images/Strip-Commentaires-davant-vacances-650-final-2.jpg){height=60%}
+
+---
+
 # Liens
 
 
 [Hive Best Practices https://github.com/wearehive/project-guidelines](https://github.com/wearehive/project-guidelines) pour Git
+
+[https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118) pour le php
