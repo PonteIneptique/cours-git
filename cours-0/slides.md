@@ -25,7 +25,11 @@
 	- Gestionnaire de métadonnées
 	- Transformation des textes
 	- Gestionnaire de projet (peut-être partagé) : ouverture des billets de tâches, etc.
-	- Tenue d'un journal des tâches effectuées
+	- Tenue d'un journal des tâches effectuées (Documentation)
+
+---
+
+# 0. Devoir
 
 - Notation :
 	- A partir des archives GIT
