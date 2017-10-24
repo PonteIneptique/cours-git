@@ -1,13 +1,14 @@
 % Introduction à Git
 % Thibault Clérice
-% Octobre X, 2017
+% Octobre 24, 2017
 
 # 0. Contenus du cours
 
-- 4 cours de 2h
+- 3 cours de 2h
 	- Git, commandes de base
 	- Github : Collaborer et faire de l'open-source/data
 	- Github et Travis : Organisation de projet, tests et intégration continue
+- 2 ateliers de 1h
 	- Point d'étape projet
 - 1 conférence 1.5h par Bridget Almas (Perseids & Alpheios)
 

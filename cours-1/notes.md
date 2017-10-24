@@ -8,6 +8,7 @@ Notes pour le cours
 - https://recompilermag.com/issues/issue-1/how-to-teach-git/
 - http://liris.cnrs.fr/~pchampin/enseignement/intro-git/
 - https://betterexplained.com/articles/aha-moments-when-learning-git/
+- sources images : https://twitter.com/RichRogersIoT/status/914577613300965377?s=09
 
 # Aller plus loin
 

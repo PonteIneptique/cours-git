@@ -72,6 +72,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         <li><a href="#métadonnées-du-textgroup">4. Métadonnées du textgroup</a></li>
         <li><a href="#métadonnées-du-work-et-de-lédition">5. Métadonnées du work et de l'édition</a></li>
         <li><a href="#un-essai-de-groupe">6. Un essai de groupe</a></li>
+        <li><a href="#tester">7. Tester</a></li>
+        <li><a href="#le-fichier-texte-tei-lidentifiant">8. Le fichier texte TEI : l'identifiant</a></li>
+        <li><a href="#le-fichier-texte-tei-lidentification-des-passages">9. Le fichier texte TEI : l'identification des passages</a></li>
+        <li><a href="#exemple">Exemple</a></li>
         </ul>
         </div>
       </div>
@@ -124,6 +128,41 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">&lt;/work&gt;</span></code></pre></div>
 <hr />
 <h1 id="un-essai-de-groupe">6. Un essai de groupe</h1>
+<hr />
+<h1 id="tester">7. Tester</h1>
+<ul>
+<li>Installer HookTest : <code>sudo pip3 install HookTest</code></li>
+<li>Dans le dossier du corpus, ouvrir un terminal et lancer <code>hooktest --console table --scheme tei --verbose 10 .</code></li>
+</ul>
+<hr />
+<h1 id="le-fichier-texte-tei-lidentifiant">8. Le fichier texte TEI : l'identifiant</h1>
+<ul>
+<li>On mets l'identifiant du texte dans l'attribut <span class="citation">@n</span> de
+<ul>
+<li><code>/TEI/text/body</code> pour de la TEI normale</li>
+<li><code>TEI/text/body/div[@type=&quot;edition&quot; or @type=&quot;translation&quot; or @type=&quot;commentary&quot;]</code> pour de l'epidoc</li>
+</ul></li>
+<li>On met sur ce même tag l'attribut xml:lang avec le code en trois caractères</li>
+</ul>
+<hr />
+<h1 id="le-fichier-texte-tei-lidentification-des-passages">9. Le fichier texte TEI : l'identification des passages</h1>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;refsDecl</span><span class="ot"> n=</span><span class="st">&quot;CTS&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;cRefPattern</span> 
+<span class="ot">      n=</span><span class="st">&quot;vers&quot;</span><span class="ot"> matchPattern=</span><span class="st">&quot;(\w+).(\w+)&quot;</span>
+<span class="ot">      replacementPattern=</span><span class="st">&quot;#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:l[@n='$2'])&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;p&gt;</span>Ce pointeur extrait les vers des poèmes<span class="kw">&lt;/p&gt;</span>
+  <span class="kw">&lt;/cRefPattern&gt;</span>
+  <span class="kw">&lt;cRefPattern</span> 
+<span class="ot">      n=</span><span class="st">&quot;poeme&quot;</span><span class="ot"> matchPattern=</span><span class="st">&quot;(\w+)&quot;</span>
+<span class="ot">      replacementPattern=</span><span class="st">&quot;#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;p&gt;</span>Ce pointeur extrait les poèmes<span class="kw">&lt;/p&gt;</span>
+  <span class="kw">&lt;/cRefPattern&gt;</span>
+<span class="kw">&lt;/refsDecl&gt;</span></code></pre></div>
+<hr />
+<h1 id="exemple">Exemple</h1>
+<ul>
+<li>Source : http://atilf.atilf.fr/gsouvay/dect/download/Perceval.xml http://www.atilf.fr/dect/</li>
+</ul>
             </div>
     </div>
   </div>

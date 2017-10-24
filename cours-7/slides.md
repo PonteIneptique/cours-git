@@ -56,3 +56,44 @@ https://en.wikipedia.org/wiki/ISO_639:f
 ---
 
 # 6. Un essai de groupe
+
+---
+
+# 7. Tester
+
+- Installer HookTest : `sudo pip3 install HookTest`
+- Dans le dossier du corpus, ouvrir un terminal et lancer `hooktest --console table --scheme tei --verbose 10 .`
+
+---
+
+# 8. Le fichier texte TEI : l'identifiant
+
+- On mets l'identifiant du texte dans l'attribut @n de 
+	- `/TEI/text/body` pour de la TEI normale
+	- `TEI/text/body/div[@type="edition" or @type="translation" or @type="commentary"]` pour de l'epidoc
+- On met sur ce même tag l'attribut xml:lang avec le code en trois caractères
+
+---
+
+# 9. Le fichier texte TEI : l'identification des passages
+
+```xml
+<refsDecl n="CTS">
+  <cRefPattern 
+      n="vers" matchPattern="(\w+).(\w+)"
+      replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:l[@n='$2'])">
+      <p>Ce pointeur extrait les vers des poèmes</p>
+  </cRefPattern>
+  <cRefPattern 
+      n="poeme" matchPattern="(\w+)"
+      replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+      <p>Ce pointeur extrait les poèmes</p>
+  </cRefPattern>
+</refsDecl>
+```
+
+---
+
+# Exemple 
+
+- Source : http://atilf.atilf.fr/gsouvay/dect/download/Perceval.xml http://www.atilf.fr/dect/

@@ -1,6 +1,6 @@
 % Introduction à Git
 % Thibault Clérice
-% Octobre X, 2017
+% Octobre 24, 2017
 
 # 1. Les branches
 

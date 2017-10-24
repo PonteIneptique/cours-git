@@ -1,6 +1,6 @@
 % Introduction à Git
 % Thibault Clérice
-% Octobre X, 2017
+% Octobre 24, 2017
 
 # 1. Problème
 
@@ -10,8 +10,14 @@
 
 # 2. Problème
 
-![La source du problème (bis)](cours-1/images/motivation2.png)
+![La source du problème](cours-1/images/lineofcomm.jpg)
 
+
+---
+
+# 2bis. Problème
+
+![La source du problème](cours-1/images/motivation2.png)
 ---
 
 # 3. Problème(s)

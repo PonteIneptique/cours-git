@@ -1,6 +1,6 @@
 % Introduction à Git : les serveurs
 % Thibault Clérice
-% Octobre X, 2017
+% Octobre 24, 2017
 
 # 1. Ce qu'il manque jusque là
 
