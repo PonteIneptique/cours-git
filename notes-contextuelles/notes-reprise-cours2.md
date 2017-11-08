@@ -5,9 +5,12 @@
 # Faire un rappel du vocabulaire
 
 - Je crée un repository, je fais :
+- Quand j'enregistre un fichier, git 
 - Je veux enregistrer un fichier, je fais (2 commandes):
 - Quand j'ajoute un fichier à un futur commit, il passe en phase :
 - Pour créer une branche, je fais :
+- Quand je modifie un fichier image, git n'enregistre pas le nouveau fichier : Vrai / Faux
+- Quand je modifie un fichier image, git ne comprend pas les différences entre les deux versions : Vrai / Faux
 
 # Par rapport aux branches 
 
