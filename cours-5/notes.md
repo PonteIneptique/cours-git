@@ -49,6 +49,24 @@ Cela dit, écrire des tests représente une très grande augmentation du temps d
 
 Dans certains cas, on peut parler de Test Driven Development, ou dévelopement à partir de tests.
 
+L'objectif n'est non pas d'écrire des tests a posteriori mais de les écrire avant d'écrire son propre code. Cela signifie que :
+- votre architecture est claire, pensée et solide
+- vous connaissez les utilisations de chacun de vos blocs
+
+Pour prendre un exemple, lorsque l'on écrit son XML en utilisant un schéma RelaxNG ou équivalent, on a écrit sa batterie de test en amont puisque le schéma a été prévu d'abord.
+
+Prendre l'image, essayer de montrer la différence avec du TDD.
+
+# Slide 8
+
+L'outil que nous utiliserons dans ce cours pour l'intégration continue sera Travis. C'est un outil qui a l'avantage d'être gratuit pour les logiciels open source, documénté et bien intégré avec github. En fonction d'un fichier de paramètres, il lancera l'ensemble des scripts fournis.
+
+L'un des intérêts de le connecter à github est de fournir un compte-rendu directement sur les pulls requests. Regardons plutôt l'exemple qui suit :
+
+# Slide 9
+
 # Slide 10
+
+Prendre le fichier ligne par ligne, essayez de leur faire comprendre.
 
 Si bonne compréhension, voir avec le fichier complet https://github.com/PerseusDL/canonical-latinLit/blob/master/.travis.yml
