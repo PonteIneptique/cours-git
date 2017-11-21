@@ -98,7 +98,7 @@
 
 # 12. Exercice
 
-- Aller sur https://github.com/PonteIneptique/canonical-latinLit 
+- Aller sur https://github.com/PonteIneptique/canonical-greekLit 
 - Prendre un dossier auteur de https://github.com/PonteIneptique/canonical-greekLit/tree/master/data (Identifié par tlg**** )
 - Dans ce dossier, ouvrir le fichier __cts__.xml
 - Suivant les bonnes pratiques (issues, fork, pull request), proposer la traduction du nom de l'auteur
