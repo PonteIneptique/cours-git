@@ -11,3 +11,8 @@ Ces cours sont sous licence CC BY. Les ressources utilisées par le cours sont t
 5. [Développer en ligne et en équipe: intégration continue et tests](./cours-5)
 6. [Bonnes pratiques](./cours-6)
 7. [CapiTainS : travail en groupe](./cours-7)
+
+## Ressources : 
+
+- [Mettre à jour un *fork* à partir de l'original](https://help.github.com/articles/syncing-a-fork/)
+- [Qu'est-ce que le gitignore ?](GITIGNORE.MD)
