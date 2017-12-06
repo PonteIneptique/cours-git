@@ -1,6 +1,6 @@
 % CapiTainS
 % Thibault Clérice
-% Octobre X, 2017
+% Décembre 6, 2017
 
 # 1. La norme
 
@@ -32,7 +32,8 @@
 # 4. Métadonnées du textgroup
 
 ```xml
-<textgroup xmlns="http://chs.harvard.edu/xmlns/cts" urn="urn:cts:froLit:jns915">
+<textgroup xmlns="http://chs.harvard.edu/xmlns/cts" 
+  urn="urn:cts:froLit:jns915">
 	<groupname xml:lang="fre">Wauchier de Denain</groupname>
 </textgroup> 
 ```
@@ -43,8 +44,9 @@
 https://en.wikipedia.org/wiki/ISO_639:f
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<work xmlns="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:froLit:jns915" urn="urn:cts:froLit:jns915.jns1856" xml:lang="fro">
+<work xmlns="http://chs.harvard.edu/xmlns/cts" 
+    groupUrn="urn:cts:froLit:jns915" 
+    urn="urn:cts:froLit:jns915.jns1856" xml:lang="fro">
     <title xml:lang="fre">Vie de Saint Martin</title>
     <edition workUrn="urn:cts:froLit:jns915.jns1856" urn="urn:cts:froLit:jns915.jns1856.ciham-fro1" xml:lang="fro">
         <label xml:lang="fre">Vie de Saint Martin</label>
@@ -55,14 +57,41 @@ https://en.wikipedia.org/wiki/ISO_639:f
 
 ---
 
+# 5 bis Métadonnées avancées :
+
+```xml
+<textgroup xmlns="http://chs.harvard.edu/xmlns/cts" 
+        xmlns:cpt="http://purl.org/capitains/ns/1.0#"
+        xmlns:saws="http://purl.org/saws/ontology#"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:dct="http://purl.org/dc/terms/"
+        xmlns:schema="http://schema.org/"
+        urn="urn:cts:froLit:jns915">
+  <groupname xml:lang="fre">Wauchier de Denain</groupname>
+  <cpt:structured-metadata>
+    <dc:type>schema:Person</dc:type>
+    <schema:birthDate>1200</schema:birthDate>
+    <schema:deathDate>1299</schema:deathDate>
+    <dc:description>Wauchier de Denain est un écrivain français de langue d'oïl et traducteur actif au début du XIIIe siècle. On lui attribue notamment une continuation du Graal de Chrétien de Troyes. [https://fr.wikipedia.org/wiki/Wauchier_de_Denain]</dc:description>
+    <dc:identifier>https://www.wikidata.org/wiki/Q942529</dc:identifier>
+  </cpt:structured-metadata>
+</textgroup> 
+```
+
+---
+
 # 6. Un essai de groupe
+
+Un textgroup pour Perceval - http://atilf.atilf.fr/gsouvay/dect/download/Perceval.xml
 
 ---
 
 # 7. Tester
 
-- Installer HookTest : `sudo pip3 install HookTest`
-- Dans le dossier du corpus, ouvrir un terminal et lancer `hooktest --console table --scheme tei --verbose 10 .`
+- https://capitains-validator.herokuapp.com/
+- Pour ceux-lles avec Python3 sur leur ordinateur (Ne fonctionne pas sous windows) :
+  - Installer HookTest : `sudo pip3 install HookTest`
+  - Dans le dossier du corpus, ouvrir un terminal et lancer `hooktest --console table --scheme tei --verbose 10 .`
 
 ---
 

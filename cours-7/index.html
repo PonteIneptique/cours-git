@@ -53,7 +53,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         <span class="doc-title">CapiTainS</span>
         <ul class="nav pull-right doc-info">
                     <li><p class="navbar-text">Thibault Clérice</p></li>
-                              <li><p class="navbar-text">Octobre X, 2017</p></li>
+                              <li><p class="navbar-text">Décembre 6, 2017</p></li>
                   </ul>
       </div>
     </div>
@@ -71,6 +71,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         <li><a href="#la-structure-des-dossiers">3. La structure des dossiers</a></li>
         <li><a href="#métadonnées-du-textgroup">4. Métadonnées du textgroup</a></li>
         <li><a href="#métadonnées-du-work-et-de-lédition">5. Métadonnées du work et de l'édition</a></li>
+        <li><a href="#bis-métadonnées-avancées">5 bis Métadonnées avancées :</a></li>
         <li><a href="#un-essai-de-groupe">6. Un essai de groupe</a></li>
         <li><a href="#tester">7. Tester</a></li>
         <li><a href="#le-fichier-texte-tei-lidentifiant">8. Le fichier texte TEI : l'identifiant</a></li>
@@ -112,14 +113,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <hr />
 <h1 id="métadonnées-du-textgroup">4. Métadonnées du textgroup</h1>
-<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;textgroup</span><span class="ot"> xmlns=</span><span class="st">&quot;http://chs.harvard.edu/xmlns/cts&quot;</span><span class="ot"> urn=</span><span class="st">&quot;urn:cts:froLit:jns915&quot;</span><span class="kw">&gt;</span>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;textgroup</span><span class="ot"> xmlns=</span><span class="st">&quot;http://chs.harvard.edu/xmlns/cts&quot;</span> 
+<span class="ot">  urn=</span><span class="st">&quot;urn:cts:froLit:jns915&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;groupname</span><span class="ot"> xml:lang=</span><span class="st">&quot;fre&quot;</span><span class="kw">&gt;</span>Wauchier de Denain<span class="kw">&lt;/groupname&gt;</span>
 <span class="kw">&lt;/textgroup&gt;</span> </code></pre></div>
 <hr />
 <h1 id="métadonnées-du-work-et-de-lédition">5. Métadonnées du work et de l'édition</h1>
 <p>https://en.wikipedia.org/wiki/ISO_639:f</p>
-<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span>
-<span class="kw">&lt;work</span><span class="ot"> xmlns=</span><span class="st">&quot;http://chs.harvard.edu/xmlns/cts&quot;</span><span class="ot"> groupUrn=</span><span class="st">&quot;urn:cts:froLit:jns915&quot;</span><span class="ot"> urn=</span><span class="st">&quot;urn:cts:froLit:jns915.jns1856&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;fro&quot;</span><span class="kw">&gt;</span>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;work</span><span class="ot"> xmlns=</span><span class="st">&quot;http://chs.harvard.edu/xmlns/cts&quot;</span> 
+<span class="ot">    groupUrn=</span><span class="st">&quot;urn:cts:froLit:jns915&quot;</span> 
+<span class="ot">    urn=</span><span class="st">&quot;urn:cts:froLit:jns915.jns1856&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;fro&quot;</span><span class="kw">&gt;</span>
     <span class="kw">&lt;title</span><span class="ot"> xml:lang=</span><span class="st">&quot;fre&quot;</span><span class="kw">&gt;</span>Vie de Saint Martin<span class="kw">&lt;/title&gt;</span>
     <span class="kw">&lt;edition</span><span class="ot"> workUrn=</span><span class="st">&quot;urn:cts:froLit:jns915.jns1856&quot;</span><span class="ot"> urn=</span><span class="st">&quot;urn:cts:froLit:jns915.jns1856.ciham-fro1&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;fro&quot;</span><span class="kw">&gt;</span>
         <span class="kw">&lt;label</span><span class="ot"> xml:lang=</span><span class="st">&quot;fre&quot;</span><span class="kw">&gt;</span>Vie de Saint Martin<span class="kw">&lt;/label&gt;</span>
@@ -127,10 +130,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     <span class="kw">&lt;/edition&gt;</span>
 <span class="kw">&lt;/work&gt;</span></code></pre></div>
 <hr />
+<h1 id="bis-métadonnées-avancées">5 bis Métadonnées avancées :</h1>
+<div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;textgroup</span><span class="ot"> xmlns=</span><span class="st">&quot;http://chs.harvard.edu/xmlns/cts&quot;</span> 
+<span class="ot">        xmlns:cpt=</span><span class="st">&quot;http://purl.org/capitains/ns/1.0#&quot;</span>
+<span class="ot">        xmlns:saws=</span><span class="st">&quot;http://purl.org/saws/ontology#&quot;</span>
+<span class="ot">        xmlns:dc=</span><span class="st">&quot;http://purl.org/dc/elements/1.1/&quot;</span>
+<span class="ot">        xmlns:dct=</span><span class="st">&quot;http://purl.org/dc/terms/&quot;</span>
+<span class="ot">        xmlns:schema=</span><span class="st">&quot;http://schema.org/&quot;</span>
+<span class="ot">        urn=</span><span class="st">&quot;urn:cts:froLit:jns915&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;groupname</span><span class="ot"> xml:lang=</span><span class="st">&quot;fre&quot;</span><span class="kw">&gt;</span>Wauchier de Denain<span class="kw">&lt;/groupname&gt;</span>
+  <span class="kw">&lt;cpt:structured-metadata&gt;</span>
+    <span class="kw">&lt;dc:type&gt;</span>schema:Person<span class="kw">&lt;/dc:type&gt;</span>
+    <span class="kw">&lt;schema:birthDate&gt;</span>1200<span class="kw">&lt;/schema:birthDate&gt;</span>
+    <span class="kw">&lt;schema:deathDate&gt;</span>1299<span class="kw">&lt;/schema:deathDate&gt;</span>
+    <span class="kw">&lt;dc:description&gt;</span>Wauchier de Denain est un écrivain français de langue d'oïl et traducteur actif au début du XIIIe siècle. On lui attribue notamment une continuation du Graal de Chrétien de Troyes. [https://fr.wikipedia.org/wiki/Wauchier_de_Denain]<span class="kw">&lt;/dc:description&gt;</span>
+    <span class="kw">&lt;dc:identifier&gt;</span>https://www.wikidata.org/wiki/Q942529<span class="kw">&lt;/dc:identifier&gt;</span>
+  <span class="kw">&lt;/cpt:structured-metadata&gt;</span>
+<span class="kw">&lt;/textgroup&gt;</span> </code></pre></div>
+<hr />
 <h1 id="un-essai-de-groupe">6. Un essai de groupe</h1>
+<p>Un textgroup pour Perceval - http://atilf.atilf.fr/gsouvay/dect/download/Perceval.xml</p>
 <hr />
 <h1 id="tester">7. Tester</h1>
 <ul>
+<li>https://capitains-validator.herokuapp.com/</li>
+<li>Pour ceux-lles avec Python3 sur leur ordinateur (Ne fonctionne pas sous windows) :</li>
 <li>Installer HookTest : <code>sudo pip3 install HookTest</code></li>
 <li>Dans le dossier du corpus, ouvrir un terminal et lancer <code>hooktest --console table --scheme tei --verbose 10 .</code></li>
 </ul>
