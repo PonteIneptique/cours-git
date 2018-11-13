@@ -4,29 +4,19 @@
 
 # 0. Contenus du cours
 
-- 3 cours de 2h
+- 4 cours de 2h
 	- Git, commandes de base
 	- Github : Collaborer et faire de l'open-source/data
 	- Github et Travis : Organisation de projet, tests et intégration continue
 - 2 ateliers de 1h
 	- Point d'étape projet
-- 1 conférence 1.5h par Bridget Almas (Perseids & Alpheios)
 
 ---
 
 # 0. Devoir
 
-- Travail de groupe : 3/4 personnes maximum
-- Tâche : Transformation et gestions de texte et de leurs métadonnées parmi une sélection de textes (selon les guidelines https://capitains.org )
-	- Corpus latins déjà en XML
-	- Corpus francais
-	- Corpus ENC
-	- Possibilité de faire des propositions
-- Partage des rôles : Rôles clairs et prédifinis dès le départ
-	- Gestionnaire de métadonnées
-	- Transformation des textes
-	- Gestionnaire de projet (peut-être partagé) : ouverture des billets de tâches, etc.
-	- Tenue d'un journal des tâches effectuées (Documentation)
+- Contrôle sur table, sans ordinateur, sur les commandes + questions de cours
+- Exercice en ligne de mise en application des bonnes pratiques via la transformation d'un texte vers les guidelines CapiTainS.
 
 ---
 
@@ -34,6 +24,4 @@
 
 - Notation :
 	- A partir des archives GIT
-	- A partir du travail effectué et du sérieux dans le travail en équipe
-	- Notes différentes suivant les personnes
-	- Temps de travail estimé : 20 à 30 h sur 4 mois.
+	- A partir du barême du contrôle sur table
