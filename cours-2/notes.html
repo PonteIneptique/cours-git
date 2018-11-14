@@ -54,14 +54,40 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <li class="nav-header">Table of Contents</li>
         </ul>
         <ul>
+        <li><a href="#les-branches">Les branches</a><ul>
+        <li><a href="#slide-1">Slide 1</a></li>
         <li><a href="#slide-2">Slide 2</a></li>
+        <li><a href="#slide-2-1">Slide 2</a></li>
         <li><a href="#slide-4">Slide 4</a></li>
         <li><a href="#slide-5">Slide 5</a></li>
+        </ul></li>
         </ul>
         </div>
       </div>
             <div class="span9">
-            <h1 id="slide-2">Slide 2</h1>
+            <h1 id="les-branches">Les branches</h1>
+<h2 id="slide-1">Slide 1</h2>
+<p>Les branches permettent d'avoir des états parallèles d'un même dépôt, une sorte de &quot;sauvegarder sous&quot; sur l'ensemble d'un dossier et des ses sous-dossiers. La différence, c'est qu'il existe tout un système pour fusionner ces versions entre elles.</p>
+<p>Ces &quot;sauvegarder sous&quot; sont utiles, car ils permettent de travailler, en simultanée, sur des problèmes différents. Prenons par exemple une situation simple (dessin au tableau):</p>
+<ol type="1">
+<li>j'ai une application web qui traite des données,</li>
+<li>deux collègues</li>
+<li>on doit pour la semaine prochaine corriger deux problèmes distincts :
+<ol type="a">
+<li>un problème de performance dans la communication avec la base de données,</li>
+<li>le redesign des menus.</li>
+</ol></li>
+<li>les deux collègues pourraient travailler sur les mêmes dossiers, mais séparer leur travail permettra de conserver :
+<ol type="1">
+<li>une forme de linéarité</li>
+<li>éviter des conflits entre leurs modifications durant leur travail</li>
+<li>ajoutera par exemple la capacité de changer, pour déboguer, l'affichage pour l'un, les données reçues pour l'autre.</li>
+</ol></li>
+</ol>
+<p>Généralement, la branche principale s'appelle la branche <em>master</em>. Les autres branches ont des noms libres. Cependant, il arrive souvent de retrouver les branches suivantes : - <em>dev</em> pour une version de développement qui diffère d'une version stable en master (on ne fournira sur la master que des corrections de bug tandis que l'oncontinuera à travailler à l'ajout de nouvelles fonctionnalités sur la <em>dev</em> pour la prochaine grande version) - <em>docs</em>, <em>doc</em> pour la documentation quand cela s'avère nécessaire.</p>
+<p>On recommande généralement de faire une branche = une tache (soit un bug, une nouvelle fonctionnalité, etc.)</p>
+<h2 id="slide-2">Slide 2</h2>
+<h2 id="slide-2-1">Slide 2</h2>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">
 <span class="kw">git</span> branch resume
 <span class="kw">git</span> checkout resume
@@ -88,7 +114,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">git</span> merge resume
 <span class="co"># Regarder le dossier et cours1.md</span>
 <span class="kw">git</span> log</code></pre></div>
-<h1 id="slide-4">Slide 4</h1>
+<h2 id="slide-4">Slide 4</h2>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> status <span class="co"># Être sur d'être sur master</span>
 <span class="kw">gedit</span> exercice.xml <span class="co"># Copier le contenu de https://ponteineptique.github.io/cours-git/cours-2/exemple.xml</span>
 <span class="kw">git</span> add exercice.xml
@@ -99,7 +125,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <span class="kw">git</span> commit -m <span class="st">&quot;Ajout d'un barebone xml&quot;</span>
 <span class="kw">git</span> log
 <span class="kw">git</span> status</code></pre></div>
-<h1 id="slide-5">Slide 5</h1>
+<h2 id="slide-5">Slide 5</h2>
 <div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="kw">git</span> checkout master
 <span class="kw">git</span> log 
 <span class="kw">git</span> status

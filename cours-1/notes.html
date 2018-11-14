@@ -23,10 +23,16 @@
         <li><a href="#notes-de-cours">Notes de cours</a><ul>
         <li><a href="#slide-1">Slide 1</a></li>
         <li><a href="#slide-2">Slide 2</a></li>
+        <li><a href="#slide-2bis">Slide 2bis</a></li>
         <li><a href="#slide-3">Slide 3</a></li>
         <li><a href="#slide-4">Slide 4</a></li>
+        <li><a href="#slide-5">Slide 5</a></li>
+        <li><a href="#slide-6">Slide 6</a></li>
+        <li><a href="#slide-7">Slide 7</a></li>
+        <li><a href="#slide-8">Slide 8</a></li>
+        <li><a href="#slide-9">Slide 9</a></li>
         </ul></li>
-        <li><a href="#slide-8-9-10">Slide 8, 9, 10</a></li>
+        <li><a href="#slide-10">Slide 10</a></li>
         <li><a href="#slide-11">Slide 11</a></li>
         </ul>
         </div>
@@ -47,31 +53,50 @@
 </ul>
 <h1 id="notes-de-cours">Notes de cours</h1>
 <h2 id="slide-1">Slide 1</h2>
-<ul>
-<li>La gestion de document numérique, même siens seulement, peut conduire à des situations peu aisées à gérer.</li>
-<li>Les nomenclatures changent, même quand on est seuls.</li>
-</ul>
+<p>Un problème courant dans la production de données est celui de la conservation d'étapes : on développe souvent des principes de nomenclatures particulièrement personnels qui finissent bien souvent pas rendre l'ensemble d'un dossier illisible. C'est un cas de figure que l'on retrouve souvent avec rapports, mémoires, thèse.</p>
+<p>Il est par ailleurs rare de s'en tenir à un système stable, à un ou plusieurs..</p>
 <h2 id="slide-2">Slide 2</h2>
-<ul>
-<li>La gestion de documents à plusieurs est encore plus complexe, surtout quand l'on vient à gérer des morceaux de code</li>
-<li>A partir de ces documents, quels besoins éprouvent-on ? Faire deviner :
-<ul>
-<li>Comprendre les versions</li>
-<li>Pouvoir revenir en arrière, avoir une &quot;trace&quot;</li>
-<li>Pouvoir avoir une collaboration simple</li>
-</ul></li>
-</ul>
+<p>C'est d'ailleurs dans le nombre que cette gestion devient bien complexe : plus de personnes travaillent sur le même document ou projet et plus la capacité à casser un processus est probable. Imaginez quand en plus il s'agit d'une base de code qui est censé continuer à fonctionner comme un ensemble.</p>
+<h2 id="slide-2bis">Slide 2bis</h2>
+<p>À partir de ces documents donc, d'après vous, quels besoins éprouvent les utilisateur-rice-s ? - Comprendre les versions - Pouvoir revenir en arrière, avoir une &quot;trace&quot; - Pouvoir avoir une collaboration simple</p>
 <h2 id="slide-3">Slide 3</h2>
 <ul>
 <li>Donner les réponses</li>
 </ul>
 <h2 id="slide-4">Slide 4</h2>
+<p>Le versionnage est un processus essentiel de la gestion de données et de documents numériques quand la majorité de votre travail se passe sur plate-forme informatique.</p>
+<p>Il existe bien sûr des outils de sauvegarde distante, mais il ne couvrent que peu les points évoqués plus haut, à savoir la capacité de revenir en arrière ainsi que la traçabilité. Ce n'est pas le coeur de leur fonctionnalité.</p>
+<p>Sans ignorer par ailleurs le fait que vous êtes dépendant-e-s du bon vouloir des serveurs : aucune archive n'est disponible localement.</p>
+<p>Dans ce contexte, des logiciels de versionnages se mettent en place. Les plus anciens sont SVN, que vous avez sûrement déjà croisé en tombant sur un site tel que SourceForge pour télécharger un logiciel.</p>
+<p>Git lui est né en 2005 pour aider à développer le noyau Linux. Il est sous licence libre.</p>
+<h2 id="slide-5">Slide 5</h2>
+<p>Les principes généraux de git sont assez simple : on travaille dans un dossier qui, avec ses sous-dossiers, constitue un dépôt, ou repository.</p>
+<p>On remarquera qu'à la racine de ce dépôt se trouve un dossier caché nommé &quot;.git&quot; qui, en fait, contient l'intégralité des archives du dépôt.</p>
+<p>Contrairement à Dropbox et consorts, les modifications sont archivées par acte volontaire humain. Ces modifications sont appelées &quot;commit&quot; (valider, engager). Ces ensembles de modifications sont porteuses d'un message qui est obligatoire. Elles sont aptes à comporter des modifications sur plusieurs fichiers, et ces fichiers doivent être ajoutés explicitement : on peut enregistrer ainsi des modifications sur un fichier A sans enregistrer les prémices de modifications sur un fichier B.</p>
+<h2 id="slide-6">Slide 6</h2>
+<p>On distingue trois &quot;états&quot; des fichiers :</p>
 <ul>
-<li>Le versionnage est un outil essentiel de la gestion de données et de documents numériques quand la majorité de votre travail se passe sur PC.</li>
-<li>Dropbox, google drive et consorts ne sont pas des solutions : le retour arrière, la tracabilité n'est pas assurée.</li>
+<li>Un état de travail : on modifie, mais rien n'est communiqué à l'entrepôt git.</li>
+<li>Un état intermédiaire, d'enregistrement en cours : on ajoute des fichiers, mais les fichiers ne sont pas enregistrés en <em>commit</em>.</li>
+<li>Un état d'archivage : l'ensemble des modifications sont archivées.</li>
 </ul>
-<h1 id="slide-8-9-10">Slide 8, 9, 10</h1>
-<p>Faire une démo (Essayer de faire deviner les commandes)</p>
+<p>Pour utiliser une métaphore discutable, pensez à un déménagement : le working directory, c'est votre habitation. Vous allez déplacez les cartons dans votre camion à déménagement : tant que le camion n'est pas parti, il est possible de prioriser l'une ou l'autre des pièces à déménager : c'est la <em>staging area</em>. Une fois le camion parti et arrivé dans votre nouvelle habitation, le carton est disponible, mais commit : vous n'allez pas lui faire faire le chemin inverse.</p>
+<h2 id="slide-7">Slide 7</h2>
+<p>On peut s'en sortir sur git sans grandes difficultés avec quelques commandes de base :</p>
+<ul>
+<li><code>git init</code> crée un dépôt dans le dossier courant</li>
+<li><code>git add</code> ajoute un fichier dans la staging area, <code>git add -A</code> ajoute tous les fichiers nouveaux, modifiés et supprimés dans la staging area</li>
+<li><code>git commit -m &quot;Message du commit&quot;</code> enregistre le commit avec un message</li>
+<li><code>git log</code> affiche l'histoire du repository</li>
+<li><code>git diff</code> affiche la différence entre l'état archivé et l'état actuel.</li>
+<li><code>git status</code> affiche le statut actuel du dépôt</li>
+</ul>
+<h2 id="slide-8">Slide 8</h2>
+<p>En cas de difficultés avec les couleurs; remarquez qu'il est possible de les changer.</p>
+<h2 id="slide-9">Slide 9</h2>
+<p>La qualité des messages d'archivage est primordiale : faites-y attention. Il est important dans un historique de savoir où retourner.</p>
+<h1 id="slide-10">Slide 10</h1>
+<p>Faire une démo (essayer de faire deviner les commandes)</p>
 <ul>
 <li><code>cd dev</code></li>
 <li><code>mkdir notes-du-cours</code></li>
@@ -90,7 +115,7 @@
 </ul></li>
 <li><code>git add cours1.md</code></li>
 <li><code>git status</code></li>
-<li><code>git diff</code> # Faire remarquer qu'il n'y a pas de diff puisqu'il n'y a encore rien d'enregistré dans l'archive</li>
+<li><code>git diff</code> # faire remarquer qu'il n'y a pas de diff puisqu'il n'y a encore rien d'enregistré dans l'archive</li>
 <li><code>git commit -m &quot;Premières notes du cours&quot;</code>
 <ul>
 <li>Slide 10</li>
@@ -110,7 +135,7 @@
 <li><code>git commit -m &quot;Ajout de notes oubliées pour le cours 1&quot;</code></li>
 <li><code>git status</code></li>
 <li><code>git diff</code></li>
-<li><code>git log</code> # Faire remarquer les noms de commits (ne pas utiliser le terme hash)</li>
+<li><code>git log</code> # faire remarquer les noms de commits (ne pas utiliser le terme hash)</li>
 <li>Copier ou télécharger l'image <a href="https://ponteineptique.github.io/cours-git/cours-1/images/blanc.png">blanc.png</a></li>
 <li><code>git add blanc.png</code></li>
 <li><code>git commit -m &quot;Ajout de l'image blanche&quot;</code></li>
@@ -121,7 +146,7 @@
 </ul>
 <h1 id="slide-11">Slide 11</h1>
 <ul>
-<li>Tenter la meme chose avec une image blanche et une image blanche avec un carré noire -&gt; Parler des limitations pour les fichiers compilés !</li>
+<li>Tenter la même chose avec une image blanche et une image blanche avec un carré noire -&gt; Parler des limitations pour les fichiers compilés !</li>
 </ul>
             </div>
     </div>
