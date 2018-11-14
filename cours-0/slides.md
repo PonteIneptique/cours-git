@@ -23,5 +23,5 @@
 # 0. Devoir
 
 - Notation :
-	- A partir des archives GIT
-	- A partir du barême du contrôle sur table
+	- À partir des archives GIT
+	- À partir du barême du contrôle sur table

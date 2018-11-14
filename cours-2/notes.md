@@ -1,4 +1,30 @@
-# Slide 2
+Les branches
+============
+
+## Slide 1
+
+Les branches permettent d'avoir des états parallèles d'un même dépôt, une sorte de "sauvegarder sous" sur l'ensemble d'un dossier et des ses sous-dossiers. La différence, c'est qu'il existe tout un système pour fusionner ces versions entre elles.
+
+Ces "sauvegarder sous" sont utiles, car ils permettent de travailler, en simultanée, sur des problèmes différents. Prenons par exemple une situation simple (dessin au tableau): 
+
+1. j'ai une application web qui traite des données, 
+2. deux collègues
+3. on doit pour la semaine prochaine corriger deux problèmes distincts : 
+    a. un problème de performance dans la communication avec la base de données, 
+    b. le redesign des menus.
+4. les deux collègues pourraient travailler sur les mêmes dossiers, mais séparer leur travail permettra de conserver :
+    1. une forme de linéarité
+    2. éviter des conflits entre leurs modifications durant leur travail
+    3. ajoutera par exemple la capacité de changer, pour déboguer, l'affichage pour l'un, les données reçues pour l'autre.
+
+Généralement, la branche principale s'appelle la branche *master*. Les autres branches ont des noms libres. Cependant, il arrive souvent de retrouver les branches suivantes : 
+    - *dev* pour une version de développement qui diffère d'une version stable en master (on ne fournira sur la master que des corrections de bug tandis que l'oncontinuera à travailler à l'ajout de nouvelles fonctionnalités sur la *dev* pour la prochaine grande version)
+    - *docs*, *doc* pour la documentation quand cela s'avère nécessaire.
+
+On recommande généralement de faire une branche = une tache (soit un bug, une nouvelle fonctionnalité, etc.)
+
+## Slide 2
+## Slide 2
 
 ```bash
 
@@ -29,7 +55,7 @@ git merge resume
 git log
 ```
 
-# Slide 4
+## Slide 4
 
 ```bash
 git status # Être sur d'être sur master
@@ -45,7 +71,7 @@ git status
 
 ```
 
-# Slide 5
+## Slide 5
 
 ```bash
 git checkout master
