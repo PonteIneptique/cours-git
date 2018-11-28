@@ -29,7 +29,7 @@
 
 ---
 
-# 6. Ne pas développer ce qui existe déja
+# 6. Ne pas développer ce qui existe déjà
 
 - Sauf si l'outil fait 150 MO à la place des 10ko que vous avez en tête
 
@@ -48,7 +48,7 @@
 
 ---
 
-# 9. Mettez vous d'accord sur des bonnes pratiques
+# 9. Mettez-vous d'accord sur des bonnes pratiques
 
 
 ---
