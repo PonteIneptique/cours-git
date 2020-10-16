@@ -1,27 +1,57 @@
-% Introduction à Git
-% Thibault Clérice
-% Octobre 24, 2017
+---
+marp: true
+theme: chartes
+---
 
-# 0. Contenus du cours
+Introduction à Git
+==================
+
+Thibault Clérice
+
+---
+
+# Contenus du cours
 
 - 4 cours de 2h
 	- Git, commandes de base
-	- Github : Collaborer et faire de l'open-source/data
-	- Github et Travis : Organisation de projet, tests et intégration continue
-- 2 ateliers de 1h
-	- Point d'étape projet
+	- Github: Collaborer et faire de l'open-source/data
+	- Github et Travis: Organisation de projet, tests et intégration continue (Si le temps le permet pour les HN)
 
 ---
 
-# 0. Devoir
+# HN: Devoir
+
+- Contrôle sur table, stylo + papier, sans ordinateur, sur les commandes + questions de cours
+
+---
+
+# TNAH: Devoir
+
+## 2 devoirs 
 
 - Contrôle sur table, sans ordinateur, sur les commandes + questions de cours
-- Exercice en ligne de mise en application des bonnes pratiques via la transformation d'un texte vers les guidelines CapiTainS.
+- Création de set de données en équipe sous la forme d'un dépôt github.
+
+--- 
+
+# TNAH: Devoir (2)
+
+### Points d'évaluation du devoir set de données
+
+- Description du set de données
+- Établissement des missions clairs
+- Description des schémas/formats et leurs respects
+- Mise en place de process permettant à des externes de fournir des données ou de s'insérer dans le projet
+- Propreté du dépôt + Propreté de la communication
 
 ---
 
-# 0. Devoir
+# TNAH: Devoir (3)
 
-- Notation :
-	- À partir des archives GIT
-	- À partir du barême du contrôle sur table
+### Exemples de sets de données
+
+- Un corpus CapiTainS ( https://github.com/Chartes-TNAH/libretti )
+- Un corpus d'entraînement HTR ou OCR
+- Une compilation de données linguistiques
+
+Toute idée est à faire valider en amont **d'ici fin novembre au plus tard**. La quantité de données à intégrer dans le dataset sera en fonction de la complexité du projet.

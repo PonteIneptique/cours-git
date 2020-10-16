@@ -1,6 +1,6 @@
-% Les applications et serveurs web pour git : l'exemple Github
-% Thibault Clérice
-% Novembre 28, 2018
+---
+marp: true
+---
 
 # 1. Github, gitlab, etc. : pourquoi ?
 
@@ -42,25 +42,25 @@
 
 # 5. Github : les issues d'un repo logiciel
 
-![Issues de github.com/EHRI/ehri-frontend](cours-4/images/ehri-issues.png)
+![bg right w:100%](images/ehri-issues.png)
 
 ---
 
 # 6. Github : les issues d'un repo data
 
-![Issues de github.com/PerseusDL/canonical-latinLit](cours-4/images/canonicallatinlit-issues.png)
+![bg right w:100%](images/canonicallatinlit-issues.png)
 
 ---
 
 # 7. Github : un exemple de bonne issue
 
-![https://github.com/OpenGreekAndLatin/First1KGreek/issues/1548](cours-4/images/oglfirst1k-issue1548.png){height=60%}
+![bg right w:100%](images/oglfirst1k-issue1548.png){height=60%}
 
 ---
 
 # 8. Github : un exemple de mauvaise issue
 
-![https://github.com/PerseusDL/canonical-latinLit/issues/86](cours-4/images/canonicallatinlit-issue86.png){height=60%}
+![bg right w:100%](images/canonicallatinlit-issue86.png){height=60%}
 
 ---
 

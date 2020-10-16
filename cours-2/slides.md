@@ -1,6 +1,7 @@
-% Introduction à Git
-% Thibault Clérice
-% Octobre 24, 2017
+---
+marp: true
+---
+
 
 # 1. Les branches
 
@@ -16,18 +17,18 @@
 
 ---
 
-# 2. Les branches : Vocabulaire
+# 2. Les branches : vocabulaire et commandes
 
 - **Créer une branche** : `git branch [nom de la branche]`
 - **Se déplacer dans une branche** : `git checkout [nom de la branche]`
 - **Se déplacer et créer une branche en même temps** : `git checkout -b [nom de la branche]`
-- **Fusionner une branche** : `git merge` (on fusionne toujours depuis la branche réceptrice, celle sur laquelle on veut continuer de travailler ensuite)
+- **Fusionner une branche** : `git merge [branche dont on veut les modifications]` (on fusionne toujours depuis la branche réceptrice, celle sur laquelle on veut continuer de travailler ensuite)
 
 ---
 
 # 3. Branches
 
-![Issue de http://www.ateam-oracle.com/developercloudserviceworkflow/](cours-2/images/branches.png)
+![h:600px](images/branches.png)
 
 ---
 

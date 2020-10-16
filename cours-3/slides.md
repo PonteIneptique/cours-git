@@ -1,6 +1,7 @@
-% Introduction à Git : les serveurs
-% Thibault Clérice
-% Novembre 28, 2018
+---
+marp: true
+---
+
 
 # 1. Ce qu'il manque jusque là
 
@@ -22,6 +23,8 @@ Des entreprises et des structures du public fournissent des serveurs centralisé
 ---
 
 # 3. Un dessin vaut mieux qu'une explication
+
+![bg right w:110%](images/push-pull.png)
 
 ---
 
