@@ -1,6 +1,7 @@
-% Développer en ligne et en équipe: intégration continue et tests
-% Thibault Clérice
-% Octobre X, 2017
+---
+marp: true
+---
+
 
 # 1. Question 
 
@@ -36,7 +37,7 @@ Quand on développe avec une équipe, quels risques encourons-nous ?
 
 # 5. Principe
 
-![https://insights.sei.cmu.edu/devops/2015/01/continuous-integration-in-devops-1.html](cours-5/images/ci.jpg){width=80%}
+![bg right width:100%](images/ci.jpg)
 
 ---
 
@@ -58,7 +59,7 @@ Quand on développe avec une équipe, quels risques encourons-nous ?
 	- Écrire le test veut dire que l'on est sûr de ce que l'on veut obtenir. C'est un moyen de se rendre compte de la limite de la compréhension de notre code ou de notre mission.
 	- Lorsque j'écris un fichier XML avec un schéma prédéfini, je fais en fait une sorte de TDD. En soit, j'établis un résultat attend tel que TEI > text > body > div, et si je fais TEI > text > body > lg, une erreur est affichée.
 
-![D'après http://agiledata.org/essays/tdd.html](cours-5/images/tdd.png)
+![D'après http://agiledata.org/essays/tdd.html](images/tdd.png)
 
 ---
 
@@ -72,7 +73,9 @@ Encore plus intéressant : en cas de pull request, il vous avertira avant de fai
 
 # 9. Les outils : l'exemple de Travis 
 
-![https://github.com/OpenGreekAndLatin/First1KGreek/pull/1765](./cours-5/images/ogl-first1k-pr1765.png){height=60%}
+![bg right width:100%](./images/ogl-first1k-pr1765.png)
+
+---
 
 # 10. Les outils : configurer Travis
 
